@@ -1,0 +1,79 @@
+1 Ride app
+
+Fact Table:
+
+Ride Records (e.g., RideID (Primary Key), DriverID (Foreign Key), PassengerID (Foreign Key), PickupLocationID (Foreign Key), DropoffLocationID (Foreign Key), RideDate, Fare, Duration, etc.)
+Dimension Tables:
+
+Driver Dimension:
+
+DriverID (Primary Key)
+DriverName
+VehicleType
+Rating
+...
+Passenger Dimension:
+
+PassengerID (Primary Key)
+PassengerName
+Email
+MembershipStatus
+...
+Location Dimension:
+
+LocationID (Primary Key)
+Name
+Address
+Latitude
+Longitude
+...
+Payment Dimension:
+
+PaymentID (Primary Key)
+RideID (Foreign Key)
+PaymentMethod
+Amount
+Status
+
+
+
+2...
+
+
+Fact Table:
+
+Reservation Records (e.g., ReservationID (Primary Key), CustomerID (Foreign Key), RestaurantID (Foreign Key), ReservationDate, ReservationTime, NumberOfGuests, SpecialRequests, etc.)
+Dimension Tables:
+
+Customer Dimension:
+
+CustomerID (Primary Key)
+CustomerName
+Email
+Phone
+MembershipStatus
+...
+Restaurant Dimension:
+
+RestaurantID (Primary Key)
+RestaurantName
+CuisineType
+Rating
+Address
+...
+Review Dimension:
+
+ReviewID (Primary Key)
+RestaurantID (Foreign Key)
+CustomerID (Foreign Key)
+Rating
+ReviewText
+ReviewDate
+...
+Reservation Date Dimension:
+
+DateID (Primary Key)
+ReservationDate
+DayOfWeek
+Month
+Year

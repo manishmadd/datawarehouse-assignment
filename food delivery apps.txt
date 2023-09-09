@@ -1,0 +1,36 @@
+Fact Table:
+
+Order Records (e.g., OrderID (Primary Key), CustomerID (Foreign Key), RestaurantID (Foreign Key), DriverID (Foreign Key), OrderDate, TotalAmount, etc.)
+Dimension Tables:
+
+Customer Dimension:
+
+CustomerID (Primary Key)
+Name
+Phone
+Email
+MembershipStatus
+...
+Restaurant Dimension:
+
+RestaurantID (Primary Key)
+Name
+CuisineType
+Rating
+Address
+...
+Driver Dimension:
+
+DriverID (Primary Key)
+Name
+VehicleType
+Rating
+Location
+...
+Menu Item Dimension:
+
+MenuItemID (Primary Key)
+RestaurantID (Foreign Key)
+ItemName
+Price
+Description

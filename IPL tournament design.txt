@@ -1,0 +1,36 @@
+Fact Table:
+
+Match Results (e.g., MatchID (Primary Key), Date, VenueID (Foreign Key), Team1ID (Foreign Key), Team2ID (Foreign Key), WinnerID (Foreign Key), PlayerOfTheMatchID (Foreign Key), RunsScored, WicketsTaken, etc.)
+Dimension Tables:
+
+Team Dimension:
+
+TeamID (Primary Key)
+TeamName
+Coach
+HomeVenue
+...
+Player Dimension:
+
+PlayerID (Primary Key)
+PlayerName
+DateOfBirth
+Nationality
+BattingAverage
+BowlingAverage
+...
+Venue Dimension:
+
+VenueID (Primary Key)
+VenueName
+City
+Capacity
+...
+Date Dimension:
+
+DateID (Primary Key)
+MatchDate
+DayOfWeek
+Season
+
+
